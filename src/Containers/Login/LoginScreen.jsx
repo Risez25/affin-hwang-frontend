@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { PropTypes } from 'prop-types';
 import { Helmet } from 'react-helmet';
 import * as Yup from 'yup';
 import { Formik, Form, Field } from 'formik';
@@ -16,13 +15,7 @@ const { Text } = Typography;
 
 class LoginScreen extends React.PureComponent {
   componentDidMount() {
-    const { appGoToHome, action } = this.props;
-
-    // if (action === 'POP') {
-    //   // block to access login page from URL
-    //   // login page only can be redirect from other page (PUSH)
-    //   appGoToHome();
-    // }
+    this.props.actions.appSetHeaderText('Login')
   }
 
   render() {
@@ -41,7 +34,7 @@ class LoginScreen extends React.PureComponent {
               this.props.actions.appAuthenticate(formikBag, values.email, values.password);
             }}
             validationSchema={Yup.object().shape({
-              email: Yup.string().required(intl.formatMessage({ id: 'username_is_required' })),
+              email: Yup.string().required(intl.formatMessage({ id: 'email_is_required' })),
               password: Yup.string().required(intl.formatMessage({ id: 'password_is_required' }))
             })}
           >

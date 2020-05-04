@@ -5,6 +5,8 @@
   "dob_is_required": "Date Of Birth is required",
   "email": "Email",
   "email_is_required": "Email is required",
+  "go_to_login": "Go To Login",
+  "login": "Login",
   "name": "Name",
   "name_is_required": "Name is required",
   "password": "Password",
@@ -13,6 +15,5 @@
   "phone_is_required": "Phone is required",
   "register": "Register",
   "register_form": "Register Form",
-  "register_is_required": "Register is required",
-  "go_to_login":"Go To Login"
+  "register_is_required": "Register is required"
 }

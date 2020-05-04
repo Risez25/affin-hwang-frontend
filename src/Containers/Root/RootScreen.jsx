@@ -4,7 +4,7 @@ import { ConnectedRouter } from 'connected-react-router';
 
 import { IntlProvider } from 'react-intl';
 
-import { Row, Col, Layout, Divider } from 'antd';
+import { Row, Col, Layout } from 'antd';
 import { history } from '../../Stores/CreateStore';
 
 import AppNavigator from '../../Navigators/AppNavigator';
