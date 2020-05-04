@@ -10,7 +10,6 @@ import { Card, Row, Col, Button, Typography, Layout } from 'antd';
 import { FormikInput, FormikDatePicker, FormikPassword } from '../../Components/Formik';
 import AppActions from '../../Stores/App/AppActions';
 import RegisterAction from '../../Stores/Register/RegisterAction';
-import './RegisterScreenStyle.css';
 import { bindActionCreators } from 'redux';
 
 const { Text } = Typography;

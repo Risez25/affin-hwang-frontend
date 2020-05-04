@@ -23,7 +23,7 @@ export function* appAuthenticate({ formikBag, email, password }) {
     );
     if (result.status === 200) {
       yield put(AppActions.appSetToken(result.data.token.accessToken));
-      yield put(history.push('/dashboard'))
+      yield put(history.push('/home'))
     }
   } catch (error) {
   } finally {

@@ -8,7 +8,6 @@ import { injectIntl } from 'react-intl';
 import { Card, Row, Col, Button, Icon, Typography, Layout } from 'antd';
 import { FormikInput, FormikPassword } from '../../Components/Formik';
 import AppActions from '../../Stores/App/AppActions';
-import './LoginScreenStyle.css';
 import { bindActionCreators } from 'redux';
 
 const { Text } = Typography;
