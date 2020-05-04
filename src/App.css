@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+
+:root {
+  --FIRST_COLOR: #00a19c;
+  --SECOND_COLOR: #ffffff;
+  --THIRD_COLOR: #058e89;
+  --BLACK_COLOR: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tr.info-row {
+  background-color: #e6f7ff;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+tr.success-row {
+  background-color: #f6ffed;
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+tr.warning-row {
+  background-color: #fffbe6;
+  color: #000000;
+}
+
+tr.error-row {
+  background-color: #fff1f0;
+  color: #000000;
+}
+.ant-menu-item {
+  background-color: var(--FIRST_COLOR);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 32px;
+}
+.ant-menu-inline .ant-menu-item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.ant-menu-item-active {
+  background-color: var(--FIRST_COLOR) !important;
+}
+
+.ant-menu-item-selected {
+  background-color: var(--FIRST_COLOR) !important;
+}
+.ant-menu-sub {
+  background-color: var(--FIRST_COLOR) !important;
+}
+::selection {
+  background-color: var(--FIRST_COLOR);
+}
+.ant-layout-header {
+  padding: 0 14px;
+}
+
+.anticon-menu {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-menu-vertical {
+  border-right: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active {
+  color: white;
+}
+.ant-menu-inline {
+  border-right: 0px;
 }

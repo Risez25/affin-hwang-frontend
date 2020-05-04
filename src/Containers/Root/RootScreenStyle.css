@@ -1,0 +1,68 @@
+.RootScreen .content {
+  width: 80%;
+  margin: auto;
+  bottom: 0;
+  height: 80vh;
+  position: relative;
+}
+.RootScreen .footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background: var(--SECOND_COLOR);
+  width: 100%;
+}
+.RootScreen .header {
+  background: var(--FIRST_COLOR);
+}
+.RootScreen .header-text {
+  color: var(--SECOND_COLOR);
+}
+.RootScreen .sider {
+  overflow: auto;
+  height: 100vh;
+  left: 0;
+  background: var(--FIRST_COLOR);
+}
+.RootScreen .menu {
+  background: var(--FIRST_COLOR);
+}
+.RootScreen .menuicon {
+  margin-top: 24px;
+  margin-left: 11px;
+}
+.RootScreen .sidermenuicon {
+  background: var(--THIRD_COLOR);
+  height: 64px;
+  padding-left: 20px;
+}
+
+.RootScreen .btn-primary {
+  background: var(--FIRST_COLOR);
+  color: var(--SECOND_COLOR);
+}
+
+.RootScreen .btn-primary {
+  background: var(--FIRST_COLOR);
+  color: var(--SECOND_COLOR);
+  border-color: var(--SECOND_COLOR);
+}
+
+.RootScreen .btn-primary:hover {
+  background: var(--SECOND_COLOR);
+  color: var(--FIRST_COLOR);
+  border-color: var(--FIRST_COLOR);
+}
+
+.RootScreen .btn-secondary {
+  background: var(--SECOND_COLOR);
+  color: var(--BLACK_COLOR);
+  border-color: var(--FIRST_COLOR);
+}
+
+.RootScreen .btn-secondary:hover {
+  background: var(--SECOND_COLOR);
+  color: var(--FIRST_COLOR);
+  border-color: var(--FIRST_COLOR);
+}
+/* color: var(--SECOND_COLOR); */

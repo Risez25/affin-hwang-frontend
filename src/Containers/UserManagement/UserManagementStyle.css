@@ -1,0 +1,13 @@
+.UserManagementModal.ant-modal .ant-modal-header {
+  background: var(--FIRST_COLOR) !important;
+}
+.UserManagementModal.ant-modal .ant-modal-title {
+  color: var(--SECOND_COLOR);
+}
+.UserManagementBreadCrumb{
+  padding: 16px;
+}
+.UserManagementBreadCrumb .user-management{
+   font-weight: bold; 
+   color: var(--FIRST_COLOR)
+}

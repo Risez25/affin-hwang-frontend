@@ -1,0 +1,18 @@
+{
+  "address": "Address",
+  "address_is_required": "Address is required",
+  "dob": "Date Of Birth",
+  "dob_is_required": "Date Of Birth is required",
+  "email": "Email",
+  "email_is_required": "Email is required",
+  "name": "Name",
+  "name_is_required": "Name is required",
+  "password": "Password",
+  "password_is_required": "Password is required",
+  "phone": "Phone",
+  "phone_is_required": "Phone is required",
+  "register": "Register",
+  "register_form": "Register Form",
+  "register_is_required": "Register is required",
+  "go_to_login":"Go To Login"
+}
