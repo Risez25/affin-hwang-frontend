@@ -3,9 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 
 import LoginScreen from '../Containers/Login/LoginScreen';
-import DashboardScreen from '../Containers/Dashboard/DashboardScreen';
-import UserManagementScreen from '../Containers/UserManagement/UserManagementScreen';
 import RegisterScreen from '../Containers/Register/RegisterScreen';
+import HomeScreen from '../Containers/Home/HomeScreen';
 
 export default function AppNavigator(props) {
   const { appPath } = props;
@@ -14,11 +13,10 @@ export default function AppNavigator(props) {
     <Switch>
       <Route path={`${appPath}/login`} component={LoginScreen} exact />
       <Route path={`${appPath}/register`} component={RegisterScreen} exact />
-      <Route path={`${appPath}/dashboard`} component={DashboardScreen} exact />
+      <Route path={`${appPath}/home`} component={HomeScreen} exact />
 
-      <Route path={`${appPath}/userManagementScreen`} component={UserManagementScreen} exact />
 
-      {/* <Route path={`${appPath}/`} name="Home" component={DashboardScreen} /> */}
+      <Route path={`${appPath}/`} name="Home" component={HomeScreen} />
     </Switch>
   );
 }

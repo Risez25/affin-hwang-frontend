@@ -15,5 +15,6 @@
   "phone_is_required": "Phone is required",
   "register": "Register",
   "register_form": "Register Form",
-  "register_is_required": "Register is required"
+  "register_is_required": "Register is required",
+  "home":"Home"
 }
