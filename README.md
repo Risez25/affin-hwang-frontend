@@ -1,58 +1,14 @@
-# 1) Naming Convention
+# Technologies used
 
-[NAMING_CONVENTION.md](./NAMING_CONVENTION.md)
+* React
+* Ant Design 
+* Formik
+* Redux Saga
 
-# 2) Create ReactJs Project
+# Installation:
 
-```
-npx create-react-app warehouse-web
-npm install tree-changes
-```
+**Install:**
+npm install
 
-# 3) Install react-router-dom
-
-```
-npm install react-router-dom
-```
-
-# 4) Redux Persist
-
-[REDUX_PERSIST.md](./REDUX_PERSIST.md)
-
-# 5) React Redux, Redux Saga and axios
-
-[REDUX_SAGA.md](./REDUX_SAGA.md)
-
-# 6) connected-react-router
-
-```
-npm install connected-react-router
-```
-
-https://github.com/supasate/connected-react-router
-
-- Step 1, In your root reducer file,
-  \*\* Create a function that takes history as an argument and returns a root reducer.
-
-# 7) Formik
-
-```
-npm install formik
-npm install yup
-```
-
-# 8) Install ant-design
-
-```
-npm install antd
-```
-
-# 9) Install xlsx
-
-```
-npm install xlsx
-```
-
-# 10) Internationalization and Multi-language
-
-[MULTI_LANGUAGE.md](./MULTI_LANGUAGE.md)
+**Run:**
+npm run start
