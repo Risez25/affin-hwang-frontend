@@ -6,6 +6,7 @@ import configureStore from './CreateStore';
 import { rootSaga } from './index.saga';
 import { reducer as AppReducer } from './App/AppReducers';
 import { reducer as RegisterReducer } from './Register/RegisterReducers';
+import { reducer as HomeReducers } from './Home/HomeReducers';
 
 export default () => {
   const rootReducer = history =>
@@ -16,7 +17,8 @@ export default () => {
        * @see https://redux.js.org/api-reference/combinereducers
        */
       app: AppReducer,
-      register: RegisterReducer
+      register: RegisterReducer,
+      home: HomeReducers
     });
 
   return configureStore(rootReducer, rootSaga);

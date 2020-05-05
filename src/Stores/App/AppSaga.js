@@ -16,14 +16,13 @@ export function* appAuthenticate({ formikBag, email, password }) {
 
     const result = yield call(
       ApiService.postApi, // function
-      app.apiUrl,
       'auth/login',
-      app.token,
       postData // params
     );
     if (result.status === 200) {
+      localStorage.setItem('accessToken', result.data.token.accessToken);
       yield put(AppActions.appSetToken(result.data.token.accessToken));
-      yield put(history.push('/home'))
+      yield put(history.push('/home'));
     }
   } catch (error) {
   } finally {

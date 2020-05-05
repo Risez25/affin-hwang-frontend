@@ -1,8 +1,9 @@
 .RootScreen .content {
   width: 80%;
+  top: 65px;
   margin: auto;
-  bottom: 0;
-  height: 80vh;
+  bottom: 70px;
+  height: 110vh;
   position: relative;
 }
 .RootScreen .footer {
@@ -14,6 +15,10 @@
 }
 .RootScreen .header {
   background: var(--FIRST_COLOR);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 .RootScreen .header-text {
   color: var(--SECOND_COLOR);
@@ -54,6 +59,12 @@
   border-color: var(--FIRST_COLOR);
 }
 
+.RootScreen .btn-primary:focus {
+  background: var(--SECOND_COLOR);
+  color: var(--FIRST_COLOR);
+  border-color: var(--FIRST_COLOR);
+}
+
 .RootScreen .btn-secondary {
   background: var(--SECOND_COLOR);
   color: var(--BLACK_COLOR);
@@ -64,5 +75,33 @@
   background: var(--SECOND_COLOR);
   color: var(--FIRST_COLOR);
   border-color: var(--FIRST_COLOR);
+}
+
+.RootScreen .btn-secondary:focus {
+  background: var(--SECOND_COLOR);
+  color: var(--FIRST_COLOR);
+  border-color: var(--FIRST_COLOR);
+}
+
+.RootScreen .btn-danger {
+  background: var(--RED_COLOR);
+  color: var(--SECOND_COLOR);
+  border-color: var(--RED_COLOR);
+}
+
+.RootScreen .btn-danger:hover {
+  background: var(--SECOND_COLOR);
+  color: var(--RED_COLOR);
+  border-color: var(--RED_COLOR);
+}
+
+.RootScreen .btn-danger:focus {
+  background: var(--SECOND_COLOR);
+  color: var(--RED_COLOR);
+  border-color: var(--RED_COLOR);
+}
+
+.RootScreen .logout-icon {
+  color: var(--SECOND_COLOR);
 }
 /* color: var(--SECOND_COLOR); */

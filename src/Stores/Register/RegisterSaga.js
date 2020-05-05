@@ -12,9 +12,7 @@ export function* registerPostForm({ formikBag, form }) {
 
     const result = yield call(
       ApiService.postApi, // function
-      app.apiUrl,
       'auth/register',
-      app.token,
       form // params
     );
 

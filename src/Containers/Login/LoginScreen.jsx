@@ -9,12 +9,13 @@ import { Card, Row, Col, Button, Icon, Typography, Layout } from 'antd';
 import { FormikInput, FormikPassword } from '../../Components/Formik';
 import AppActions from '../../Stores/App/AppActions';
 import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 
 const { Text } = Typography;
 
 class LoginScreen extends React.PureComponent {
   componentDidMount() {
-    this.props.actions.appSetHeaderText('Login')
+    this.props.actions.appSetHeaderText('Login');
   }
 
   render() {
@@ -83,7 +84,7 @@ class LoginScreen extends React.PureComponent {
                 </Row>
 
                 <Row type="flex" justify="start" gutter={[8, 8]}>
-                  <Col span={3}>
+                  <Col>
                     <Button
                       type="primary"
                       className="btn-primary"
@@ -92,6 +93,11 @@ class LoginScreen extends React.PureComponent {
                       onClick={handleSubmit}
                     >
                       {intl.formatMessage({ id: 'login' })}
+                    </Button>
+                  </Col>
+                  <Col>
+                    <Button type="primary" className="btn-secondary" block>
+                      <Link to="/register">{intl.formatMessage({ id: 'register' })}</Link>
                     </Button>
                   </Col>
                 </Row>

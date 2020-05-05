@@ -4,7 +4,7 @@ import { ConnectedRouter } from 'connected-react-router';
 
 import { IntlProvider } from 'react-intl';
 
-import { Row, Col, Layout } from 'antd';
+import { Row, Col, Layout, Icon } from 'antd';
 import { history } from '../../Stores/CreateStore';
 
 import AppNavigator from '../../Navigators/AppNavigator';
@@ -18,9 +18,18 @@ class RootScreen extends React.PureComponent {
   componentDidMount() {
     const { pathname, startup } = this.props;
     // Run the startup saga when the application is starting
-    startup(pathname);
+    if (
+      localStorage.getItem('accessToken') === undefined ||
+      localStorage.getItem('accessToken') === ''
+    ) {
+      history.push('/login');
+    }
   }
 
+  useLogout = () => {
+    localStorage.removeItem('accessToken');
+    history.push('/login');
+  };
   render() {
     const { appPath, headerText } = this.props;
 
@@ -33,6 +42,10 @@ class RootScreen extends React.PureComponent {
                 <Row type="flex" justify="space-between" align="bottom">
                   <Col>
                     <h3 className="header-text">Customer Management | {headerText}</h3>
+                  </Col>
+
+                  <Col offset>
+                    <Icon onClick={this.useLogout} className="logout-icon" type="logout" />
                   </Col>
                 </Row>
               </Header>

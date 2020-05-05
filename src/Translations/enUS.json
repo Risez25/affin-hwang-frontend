@@ -1,4 +1,5 @@
 {
+  "action": "Action",
   "address": "Address",
   "address_is_required": "Address is required",
   "dob": "Date Of Birth",
@@ -6,6 +7,7 @@
   "email": "Email",
   "email_is_required": "Email is required",
   "go_to_login": "Go To Login",
+  "home": "Home",
   "login": "Login",
   "name": "Name",
   "name_is_required": "Name is required",
@@ -15,6 +17,5 @@
   "phone_is_required": "Phone is required",
   "register": "Register",
   "register_form": "Register Form",
-  "register_is_required": "Register is required",
-  "home":"Home"
+  "register_is_required": "Register is required"
 }
